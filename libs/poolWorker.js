@@ -174,6 +174,7 @@ module.exports = function(logger){
                             authCallback(false);
                         }
                     }
+                    else if (switchDaemon) authCallback(false);
                     else {
                         var daemon = switchDaemon || pool.daemon;
 
